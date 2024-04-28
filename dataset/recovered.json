@@ -1,0 +1,22 @@
+{
+	"name": "recovered",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SQLDatalake",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "recovereddata",
+				"folderPath": "Recoveries",
+				"fileSystem": "operationaldatastore"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

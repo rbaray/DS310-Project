@@ -1,0 +1,21 @@
+{
+	"name": "geography",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "geographylinkedservice",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "Geography",
+				"fileSystem": "operationaldatastore"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

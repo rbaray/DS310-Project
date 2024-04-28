@@ -1,0 +1,21 @@
+{
+	"name": "policies",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "PoliciesLinkedService",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "Policies",
+				"fileSystem": "operationaldatastore"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

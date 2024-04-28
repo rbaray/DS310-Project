@@ -1,0 +1,21 @@
+{
+	"name": "finaldates",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SQLDatalake",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "Date",
+				"fileSystem": "operationaldatastore"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

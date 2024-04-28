@@ -1,0 +1,21 @@
+{
+	"name": "MetricsFromSQLLocal",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SQLDatalake",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "dbo.Covid19_Metrics.parquet",
+				"fileSystem": "newvm"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

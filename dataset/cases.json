@@ -1,0 +1,22 @@
+{
+	"name": "cases",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SQLDatalake",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "cases.parquet",
+				"folderPath": "Cases",
+				"fileSystem": "operationaldatastore"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

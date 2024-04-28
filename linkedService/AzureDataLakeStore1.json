@@ -1,0 +1,12 @@
+{
+	"name": "AzureDataLakeStore1",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureDataLakeStore",
+		"typeProperties": {
+			"dataLakeStoreUri": "https://undefined.azuredatalakestore.net/webhdfs/v1",
+			"tenant": "d57d32cc-c121-488f-b07b-dfe705680c71"
+		}
+	}
+}
